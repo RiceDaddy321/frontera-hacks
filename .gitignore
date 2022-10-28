@@ -8,3 +8,8 @@ Gemfile.lock
 
 # Visual Studios
 .vscode
+
+# firebase
+.firebaserc
+firebase.json
+.firebase

@@ -1,6 +1,6 @@
 {% if include.ga_id %}
-  <!-- Google Analytics code -->
-  <script>
+  <!-- Old Google Analytics code -->
+  <!-- <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -9,5 +9,28 @@
     ga('create', '{{ include.ga_id }}', 'auto');
     ga('send', 'pageview');
 
+  </script> -->
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyABJ36XBoWQPYBQ9xGo3OMNqTghX8AhAGU",
+      authDomain: "frontera-hacks.firebaseapp.com",
+      projectId: "frontera-hacks",
+      storageBucket: "frontera-hacks.appspot.com",
+      messagingSenderId: "468033336189",
+      appId: "1:468033336189:web:dce504bec049f3e8d69214",
+      measurementId: "G-CYNBMPT4RB"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
   </script>
 {% endif %}

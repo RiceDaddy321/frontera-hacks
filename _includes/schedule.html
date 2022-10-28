@@ -1,0 +1,32 @@
+<section class="schedule">
+    <div class="container">
+      <h1 class="text-center">FAQ</h1>
+      <!-- column one -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+            <h2>{{ site.event.saturday.day }}</h2>
+            <!-- This is the start of the listing of the slots -->
+            {% for item in site.event.saturday.slots %}
+            <div class="question col-xs-12 col-sm-12">
+                {{item.time | markdownify }}
+                {{ item.name | markdownify }}
+                <hr>
+            </div>
+            {% endfor %}
+        </div>
+        <!-- column one -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+              <h2>{{ site.event.sunday.day }}</h2>
+              <!-- This is the start of the listing of the slots -->
+              {% for item in site.event.sunday.slots %}
+              <div class="question col-xs-12 col-sm-12">
+                  {{item.time | markdownify }}
+                  {{ item.name | markdownify }}
+                  <hr>
+              </div>
+              {% endfor %}
+          </div>
+      </div>
+    </div>
+  </section>

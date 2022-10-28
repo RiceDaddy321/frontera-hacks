@@ -30,6 +30,11 @@ Advantages:
 If you would like to populate and test the website locally, follow these steps:
 
 1. Install Jekyll prerequisites by following one of the [guides][jekyll-guides]
+    1. Install Ruby version 2.76.<br />
+For mac run ```brew install ruby@2.7```.<br />
+For windows use [RubyInstaller][rubyinstall]
+    2. Download [RubyGem][install-gem]
+    3. Install jekyll throught the guide.
 2. Install Jekyll and bundler gems `gem install jekyll bundler`
 3. Build and serve the site locally `bundle exec jekyll serve`
 4. Head over to [http://localhost:4000/][localhost]
@@ -37,6 +42,8 @@ If you would like to populate and test the website locally, follow these steps:
 
 [jekyll-guides]: https://jekyllrb.com/docs/installation/
 [localhost]: http://localhost:4000/
+[rubyinstall]: https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.7.6-1/rubyinstaller-2.7.6-1-x64.exe
+[install-gem]: https://rubygems.org/pages/download
 
 ### Setting up a custom domain
 

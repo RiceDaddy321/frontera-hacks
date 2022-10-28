@@ -5,7 +5,7 @@
 # If you are hosting in a sub-folder, for example: https://mlh.github.io/mlh-hackathon-boilerplate/,
 # you must specify it as the baseurl
 # If you hosting as a root, for example: htttps://[github username].github.io, then leave it blank
-baseurl: "/mlh-hackathon-boilerplate"
+baseurl: ""
 
 # uncomment the next line if you are hosting as a root and not sub-folder
 # for example, when runnig locally at http://127.0.0.1:4000/
@@ -13,7 +13,7 @@ baseurl: "/mlh-hackathon-boilerplate"
 
 # If you're using GitHub pages without a custom domain, this is "https://[github username].github.io"
 # If you're using GitHub pages with a custom domain, this is "http://[your domain]" (or https if you're using SSL)
-url: "https://mlh.github.io"
+url: "http://fronterahacks.com/"
 
 # The ability to use custom themes.
 style:
@@ -29,36 +29,35 @@ social:
 
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
-  title:       "Example Hacks | 5-6 August 2022"
-  description: "This is a sample hackathon website that you can use by following instructions on GitHub."
-  image:       "https://prime.mlh.io/img/logos/mlh-prime-color.svg"
+  title: "Frontera Hacks | 11-12 February 2023"
+  description: "Frontera Hacks is an inaugural 24-hour hackathon hosted by Frontera Devs."
+  image: "_site/images/favicon.ico"
 
 # Event information.
 event:
-  name:        "Example Hacks"
-  description: "This is a sample hackathon website that you can use by following instructions on GitHub."
-  date:        "5 - 6 August 2022"
-  location:    "Holmdel, NJ, United States"
+  name: "Frontera Hacks"
+  description: "Frontera Hacks is an inaugural 24-hour hackathon hosted by Frontera Devs."
+  date: "11-12 February 2023"
+  location: "Weslaco, TX, United States"
 
   trust_badge:
-    year:   "2017"  # season year
-    region: "eu"    # "na" or "eu"
-    color:  "white" # "white", "black", "gray", "red", "blue" or "yellow"
+    year: "2023" # season year
+    region: "na" # "na" or "eu"
+    color: "white" # "white", "black", "gray", "red", "blue" or "yellow"
 
+  # WE NEED TO TALK TO MLH ABOUT THIS.
   hero:
     links:
       - text: "Apply"
         my_mlh:
-          client_id:    "0e2f9fc2921d3ad3e12ae900af630d09382e1b3dc1b5b50de2b01b70ad64dbee"
+          client_id: "0e2f9fc2921d3ad3e12ae900af630d09382e1b3dc1b5b50de2b01b70ad64dbee"
           redirect_uri: "https://mlh.github.io/mlh-hackathon-boilerplate/success.html"
       - text: "Sponsor"
         href: "mailto:sponsorship@website.com"
 
   about:
     description: >
-      Example Hacks is a hackathon hosted at The University of Example.
-      This is your opportunity to describe your event, what to expect, where it is & anything unique to your event.
-      Keep it straightforward, don't make it too long.
+      Frontera Hacks is an inaugural 24-hour hackathon hosted by Frontera Devs that aims to foster a community of developers driven to innovate. At Frontera Hacks, we aim to provide an experience for developers of all skill levels to adopt skills taught outside of the classroom, collaborate with like-minded teams, and design projects with the potential to accelerate innovation in the Rio Grande Valley.
 
   # Info Sections
   info:
@@ -76,34 +75,79 @@ event:
         description: >
           We can write something nice with a graphic (as above) to make the event more appealing.
 
+  # Day 1 schedule
+  saturday:
+    day: "October 16th, Saturday"
+    slots:
+      - time: "0:00AM"
+        name: "Check-in"
+      - time: "0:00AM"
+        name: "Opening Ceremony"
+      - time: "0:00AM"
+        name: "Team Formation"
+      - time: "0:00AM"
+        name: "Hacking Begins"
+      - time: "0:00AM"
+        name: "Introduction to Python"
+      - time: "0:00AM"
+        name: "AI Project Workshop"
+      - time: "0:00AM"
+        name: "Web Development"
+      - time: "0:00AM"
+        name: "Paint Competition with MS Paint"
+      - time: "0:00AM"
+        name: "Resume Workshop"
+
+  # Day 2 schedule
+  sunday:
+    day: "October 17th, Sunday"
+    slots:
+      - time: "0:00AM"
+        name: "Breakfast"
+      - time: "0:00AM"
+        name: "Meditation Space"
+      - time: "0:00AM"
+        name: "TBD"
+      - time: "0:00AM"
+        name: "Women in Industry Panel"
+      - time: "0:00AM"
+        name: "Career Fair"
+      - time: "0:00AM"
+        name: "Hacking Stops"
+      - time: "0:00AM"
+        name: "Lunch"
+      - time: "0:00AM"
+        name: "Award Ceremony"
+      - time: "0:00AM"
+        name: "Goodbye!"
+
   # Frequently asked questions.
   faq:
     - question: "What is a hackathon?"
       answer: >
-        A hackathon is an invention marathon. Students come together to build cool
-        software & hardware hacks over 24-48 hours. It's [very beginner friendly](https://medium.com/@tfogo/hackathons-are-for-beginners-77a9c9c0e000#.cj21niskl).
-    - question: "How much does it cost?"
+        A hackathon is a sprint-like event where developers collaborate to build projects that solve challenges. At Frontera Hacks, hackers can look forward to educational workshops, learning from skilled mentors, and, of course, fun games and great swag.
+    - question: "Who is this event for?"
       answer: >
-        Nothing. Attending a hackathon is free.
-    - question: "Do I need to be a student to attend?"
+        Students from all backgrounds are welcome at Frontera Hacks. No extensive knowledge of programming is necessary.
+    - question: "Do I need a team to participate?"
       answer: >
-        Yes. Only students who are currently enrolled at a college/university or
-        have graduated within the past 12 months are eligible to attend.
-    - question: "Where is the event?"
+        While teams are not required in order to participate, it’s a great way to meet new people and create something together. Teams may have up to 4 members, and you will have a chance to meet other hackers at our Team Formation events and in the Discord server!
+    - question: "What is the cost to participate?"
       answer: >
-        The event is being hosted at [insert venue location here].
-    - question: "What is Major League Hacking?"
+        Nada, nothing, zilch. There is absolutely no cost for applying or participating in Frontera Hacks. We want to make this event as accessible as possible to all those interested so make sure you apply!
+
+    - question: "What if I don’t know how to code?"
       answer: >
-        Major League Hacking is [the official student hackathon league](https://mlh.io) in North America & Europe.
-        We work with over 200 Member Events and empower over 70,000 students every year.
-    - question: "Is there a code of conduct?"
+        No experience is needed — whether you're a coder, an artist, a designer, or a writer, you'll get a chance to work with various mentors, attend workshops, interact with companies, and learn alongside fellow participants.
+
+    - question: "What if I need special accomodations?"
       answer: >
-        Yes there is. We enforce it very strongly. You can [find it here](https://static.mlh.io/docs/mlh-code-of-conduct.pdf).
+        Frontera Hacks prioritizes accessibility and accomodations that make our event welcoming for everyone. Please list any special accommodations in your admissions, or contact us with any other concerns.
 
   # This is the message you'll receive once you've registered.
   register:
     message: >
-      You'll receive more information closer to the hackathon.
+      Thank you for registering for Frontera Devs first hackathon! You'll receive more information closer to the hackathon!
 
 # ----------------------------------------------------
 # -- Ignore this unless you know what you're doing. --
@@ -111,10 +155,10 @@ event:
 
 markdown: kramdown
 exclude:
- - node_modules
- - gulpfile.js
- - Gemfile
- - Gemfile.lock
- - package.json
- - README.md
- - CNAME
+  - node_modules
+  - gulpfile.js
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - README.md
+  - CNAME

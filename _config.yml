@@ -37,6 +37,7 @@ seo:
 event:
   name: "Frontera Hacks"
   description: "Frontera Hacks is the an inaugural 24-hour hackathon hosted by Frontera Devs."
+  tagline: "Accelerating innovation in the RGV"
   date: "11-12 February 2023"
   location: "Weslaco, TX, United States"
 
@@ -54,6 +55,10 @@ event:
           redirect_uri: "https://mlh.github.io/mlh-hackathon-boilerplate/success.html"
       - text: "Sponsor"
         href: "mailto:sponsorship@website.com"
+    register:
+        text: "Register"
+        img: "images/register_banner.svg"
+        href: "https://airtable.com/shr9XGx5Rde2iPLbh"
 
   about:
     description: >

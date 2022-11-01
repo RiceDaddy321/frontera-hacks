@@ -1,0 +1,15 @@
+<div class="badges">
+  {% include trust_badge.html %}
+  {% assign register = site.event.hero.register %}
+  <a
+    id="mlh-trust-badge"
+    href="{{ register.href}}"
+    target="_blank"
+  >
+    <img
+      src="{{ register.img }}"
+      alt="{{ register.text }}"
+      style="width: 100%"
+    />
+  </a>
+</div>

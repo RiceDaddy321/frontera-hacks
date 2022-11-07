@@ -82,7 +82,7 @@ event:
 
   # Day 1 schedule
   saturday:
-    day: "October 16th, Saturday"
+    day: "October 16th | Saturday"
     slots:
       - time: "0:00AM"
         name: "Check-in"
@@ -105,7 +105,7 @@ event:
 
   # Day 2 schedule
   sunday:
-    day: "October 17th, Sunday"
+    day: "October 17th | Sunday"
     slots:
       - time: "0:00AM"
         name: "Breakfast"

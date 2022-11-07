@@ -16,7 +16,7 @@
  */
 
 * {
-  font-family: "Open Sans";
+  font-family: "DM Sans";
   font-weight: 600;
 }
 
@@ -27,6 +27,7 @@ body {
     #090d1e 49.79%,
     #090d1e 101.7%
   );
+  color: #f7f8fa;
 }
 
 section,html, body {
@@ -131,7 +132,7 @@ section,html, body {
   /* background: #fff; */
   border: 10px solid #0f2c34;
   border-radius: 40px;
-  color: #0f2c34;
+  color: #abbcc1;
   display: inline;
   font-family: Montserrat;
   font-size: 24px;
@@ -151,6 +152,20 @@ section,html, body {
 .hero .buttons a:not(:last-child) {
   margin-right: 10px;
 }
+/* Schedule section */
+.column-one {
+  grid-area: col1;
+}
+
+.column-two {
+  grid-area: col2;
+}
+
+.schedule .row {
+  display: grid;
+  grid-template-areas: 'col1 col2';
+}
+
 
 /* 
  * About Section

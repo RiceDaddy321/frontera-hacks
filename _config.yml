@@ -68,17 +68,17 @@ event:
   info:
     sections:
       - image: "images/image1.png"
-        title: "LEARN."
+        title: "CONNECT."
         description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
+          Meet developers interested in shaping the future of innovation at Frontera Hacks
       - image: "images/image2.png"
+        title: "GROW."
+        description: >
+          Advance your technical and interpersonal skills through our hands-on workshops 
+      - image: "images/image3.png"
         title: "BUILD."
         description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
-      - image: "images/image3.png"
-        title: "SHARE."
-        description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
+          Develop solutions with the potential to aid and impact our community
 
   # Day 1 schedule
   saturday:
@@ -148,6 +148,19 @@ event:
     - question: "What if I need special accomodations?"
       answer: >
         Frontera Hacks prioritizes accessibility and accomodations that make our event welcoming for everyone. Please list any special accommodations in your admissions, or contact us with any other concerns.
+
+  # sponsors list
+  sponsors:
+    - name: "HEB."
+      image: "images/Sponsors/HEB/heb-logo@logotyp.us.svg"
+      tier: "diamond"
+    - name: "Crowdstrike"
+      image: "images/Sponsors/Crowdstrike/CrowdStrike_Logos/CS_Logos_2020_FullBlack_FullBlack.png"
+      tier: "Community"
+    - name: "Rosenfeld Media"
+      tier: "Supporter"
+      image: "images/Sponsors/Rosenfeld_Media/RM-Logo_logotype.png"
+      #followup with taskade to see if they actually want sponsorship
 
   # This is the message you'll receive once you've registered.
   register:

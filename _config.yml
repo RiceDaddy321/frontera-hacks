@@ -155,15 +155,18 @@ event:
 
   # sponsors list
   sponsors:
-    - name: "HEB."
-      image: "images/Sponsors/HEB/heb-logo@logotyp.us.svg"
-      tier: "diamond"
-    - name: "Crowdstrike"
-      image: "images/Sponsors/Crowdstrike/CrowdStrike_Logos/CS_Logos_2020_FullBlack_FullBlack.png"
-      tier: "Community"
-    - name: "Rosenfeld Media"
-      tier: "Supporter"
-      image: "images/Sponsors/Rosenfeld_Media/RM-Logo_logotype.png"
+    - tier_name: "Platinum"
+      sponsors:
+        - name: "HEB."
+          image: "images/Sponsors/HEB/heb-logo@logotyp.us.svg"
+    - tier_name: "Community"
+      sponsors:
+        - name: "Crowdstrike"
+          image: "images/Sponsors/Crowdstrike/CrowdStrike_Logos/CS_Logos_2020_FullBlack_FullBlack.png"
+    - tier_name: "Supporter"
+      sponsors:
+        - name: "Rosenfeld Media"
+          image: "images/Sponsors/Rosenfeld_Media/RM-Logo_logotype.png"
       #followup with taskade to see if they actually want sponsorship
 
   # This is the message you'll receive once you've registered.

@@ -1,0 +1,16 @@
+<section class="sponsors">
+    <div class="container">
+        <h1 class="section-title">Sponsors</h1>
+        <div class="container px-4 py-5">
+            {% for tiers in site.event.sponsors %}
+            <h1 class="pb-2 border-bottom">{{tiers.tier_name}}</h1>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+                {% for sponsor in tiers.sponsors%}
+                    <img class="w-25 m-5" src="{{sponsor.image}}" alt="{{ sponsor.name }}">
+                {% endfor %}
+            </div>
+            {% endfor %}
+               
+        </div>
+    </div>
+</section>

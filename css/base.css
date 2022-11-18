@@ -1,0 +1,56 @@
+/* Footer CSS */
+.footer {
+    background:#f9f9f9;
+}
+
+/* Change the text color to something readable */
+.footer * {
+    color: #000000
+}
+
+.footer .info-wrapper {
+    display: flex;
+    z-index: 1;
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 10px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: flex-end;
+}
+
+.footer .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
+    align-items: stretch;
+    margin: 5rem auto 5rem auto;
+}
+
+.footer .social-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-end;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footer h3 {
+    display:flex;
+    align-self: center;
+    justify-content: center;
+    font-weight: 200;
+    font-weight: lighter;
+    font-size: x-small;
+    margin-bottom: 6vh;
+}

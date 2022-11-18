@@ -9,6 +9,10 @@
 /* Montserrat Google Font */
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
+/* DM Sans Google Font */
+@import url(https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap);
+
+@import url(https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap);
 /*
  * Primary Blue: #44D5FF;
  * Dark Blue: #0F2C34;
@@ -134,7 +138,7 @@ section,html, body {
   border-radius: 40px;
   color: #abbcc1;
   display: inline;
-  font-family: Montserrat;
+  
   font-size: 24px;
   font-weight: 700;
   padding: 10px 70px;
@@ -189,6 +193,7 @@ section,html, body {
   font-size: 22px;
   line-height: 1.6em;
   letter-spacing: -0.3px;
+  
 }
 
 .about p span {
@@ -212,7 +217,7 @@ section,html, body {
 }
 
 .info .item h1 {
-  font-family: "Montserrat";
+  
   font-size: 45px;
   font-weight: 700;
   margin: 20px 0;
@@ -238,13 +243,13 @@ section,html, body {
 }
 
 .faq h1 {
-  font-family: "Montserrat";
+  
   font-weight: 700;
   margin: 30px 0;
 }
 
 .faq .question h2 {
-  font-family: "Montserrat";
+  
   font-weight: 700;
   font-size: 24px;
 }
@@ -282,7 +287,7 @@ section,html, body {
 }
 
 .footer h3 {
-  font-family: "Montserrat";
+  
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;

@@ -1,0 +1,20 @@
+<section class="footer container-fluid">
+    <div class=" info-wrapper container text-center">
+        <div class="footer-wrapper">
+            <img src="images/frontera_hacks_footer_logo.svg" alt="The logo of the Frontera Devs UTRGV organization" class="footer-img">
+            <div class="social-links">
+                {% for social in site.social %}
+                    {% include components/footerImgWrapper.html 
+                        link = "http://jvelaz.com"
+                        description = "Jvelaz"
+                        img = "images/social/discord-black.svg"
+                    %}
+                {% endfor %}
+            </div>
+        </div>
+        <h3>&copy; 2023 {{ site.event.name }}. Made with ♡ by the Frontera Devs team</h3>
+      </div>
+</section>
+
+
+  

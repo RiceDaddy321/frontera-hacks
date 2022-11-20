@@ -1,3 +1,4 @@
+<!-- Footer Section -->
 <section class="footer container-fluid">
     <div class=" info-wrapper container text-center">
         <div class="footer-wrapper">
@@ -5,9 +6,9 @@
             <div class="social-links">
                 {% for social in site.social %}
                     {% include components/footerImgWrapper.html 
-                        link = "http://jvelaz.com"
-                        description = "Jvelaz"
-                        img = "images/social/discord-black.svg"
+                        link = social.url
+                        description = social.name
+                        img = social.img
                     %}
                 {% endfor %}
             </div>

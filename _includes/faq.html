@@ -1,17 +1,14 @@
 <!-- FAQ section -->
-<section class="faq">
-    <div class="container">
-      <h1 class="text-center">FAQ</h1>
+<section class="faq container-fluid">
+  <div class="container">
+      <h1 class="text-start">Frequently Asked Questions</h1>
       <div class="row">
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
           {% for item in site.event.faq %}
-          <div class="question col-xs-12 col-sm-12">
-            <h2>{{ item.question }}</h2>
-            <hr>
+          <div class="question col-6">
+            <h2 class="question-gradient">{{ item.question }}</h2>
             {{ item.answer | markdownify }}
           </div>
           {% endfor %}
-        </div>
       </div>
     </div>
   </section>

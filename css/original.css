@@ -184,21 +184,38 @@ section,html, body {
     display: flex;
     flex-direction: column;
     align-content: flex-start;
-    left: 30px;
+    left: 12.7%;
 }
 
 .about p {
   color: #eeeeee;
-  font-weight: 600;
-  font-size: 22px;
-  line-height: 1.6em;
-  letter-spacing: -0.3px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 122%;
   
 }
 
 .about p span {
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.about h1 {
+  font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 55px;
+line-height: 122%;
+/* or 67px */
+
+
+background: linear-gradient(90deg, #DAFFF2 0%, #B1DAFF 121.39%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
 }
 
 /*
@@ -236,8 +253,8 @@ section,html, body {
  */
 
 .faq {
-  /* background-color: #fff; */
-  margin-top: 15px;
+  background: #F9F9F9;
+  color: #000000;
   padding: 100px 0;
   position: relative;
 }
@@ -248,10 +265,21 @@ section,html, body {
   margin: 30px 0;
 }
 
-.faq .question h2 {
+.faq .question .question-gradient {
   
-  font-weight: 700;
-  font-size: 24px;
+  font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 100%;
+/* identical to box height, or 25px */
+
+
+background: linear-gradient(90deg, #3FA1CB 18.08%, #9D57E3 95.76%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
 }
 
 .faq .question hr {

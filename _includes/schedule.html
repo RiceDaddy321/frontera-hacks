@@ -1,31 +1,31 @@
+<!-- Schedule section -->
 <section class="schedule">
   <div class="container">
-    <h1 class="text-center">Schedule</h1>
+    <h1 class="text-start">Schedule</h1>
+    <p class="text-start small-subtitile">All times listed are in Central Daylight Time (CDT).</p>
     <!-- column one -->
-    <div class="row">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2 column-one">
-        <h2>{{ site.event.saturday.day }}</h2>
+    <div class="row d-flex justify-content-start justify-items-start">
+      <div class="col-5 column-one">
+        <h4 class="gradient-h2-one">{{site.event.saturday.day}}</h4>
         <!-- This is the start of the listing of the slots -->
+        <div class="question row row-cols-2">
         {% for item in site.event.saturday.slots %}
-        <div class="question col-xs-12 col-sm-12">
-          {{item.time | markdownify }}
-          {{ item.name | markdownify }}
-          <hr>
+          <p class="col text-start">{{item.time}}</p>
+          <p class="col text-start">{{ item.name}}</p>
+          {% endfor %}
         </div>
-        {% endfor %}
       </div>
+      
       <!-- column two -->
-
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2 column-two">
-        <h2>{{ site.event.sunday.day }}</h2>
+      <div class="col-5 column-two">
+        <h4 class="gradient-h2-two">{{site.event.saturday.day}}</h4>
         <!-- This is the start of the listing of the slots -->
-        {% for item in site.event.sunday.slots %}
-        <div class="question col-xs-12 col-sm-12">
-          {{item.time | markdownify }}
-          {{ item.name | markdownify }}
-          <hr>
+        <div class="question row row-cols-2">
+          {% for item in site.event.sunday.slots %}
+            <p class="col text-start">{{item.time}}</p>
+            <p class="col text-start">{{ item.name}}</p>
+            {% endfor %}
+          </div>
         </div>
-        {% endfor %}
-      </div>
-    </div>
+  </div>
 </section>

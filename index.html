@@ -4,12 +4,15 @@ layout: default
 <!-- This site depends on a lot of things, but this whole page is the body of the website -->
 {% include hero.html %}
 <section class="about">
-  <h1>About</h1>
   <div class="container">
-    <div class="">
-      <p>
-      {{ site.event.about.description | markdownify }}
-    </p>
+
+    <h1>About</h1>
+    <div class="container">
+      <div class="">
+        <p>
+        {{ site.event.about.description | markdownify }}
+      </p>
+      </div>
     </div>
   </div>
 </section>
@@ -18,7 +21,7 @@ layout: default
   <div class="container">
     <div class="items row">
       {% for section in site.event.info.sections %}
-        <div class="col-xs-12 col-sm-4 text-center">
+        <div class="col-xs-12 col-sm-12 col-md-4 text-center">
           <div class="item">
             <img src="{{ section.image }}" />
             <h1>{{ section.title }}</h1>

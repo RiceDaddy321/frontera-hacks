@@ -2,7 +2,6 @@
 * RegistrationHacks Style File
 * http://bit.ly/1ywfhq7
 */
-
 /* Open Sans Google Font */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:600,700);
 
@@ -62,6 +61,15 @@ section,html, body {
   position: fixed;
   width: 100vw;
   flex-wrap: nowrap;
+}
+
+/* sponsor section */
+.sponsor {
+  width: 300px;
+}
+
+.zoom {
+  transition: transform .2s;
 }
 /* 
  * Hero Section
@@ -156,21 +164,6 @@ section,html, body {
 .hero .buttons a:not(:last-child) {
   margin-right: 10px;
 }
-/* Schedule section */
-.column-one {
-  grid-area: col1;
-}
-
-.column-two {
-  grid-area: col2;
-}
-
-.schedule .row {
-  display: grid;
-  grid-template-areas: 'col1 col2';
-}
-
-
 /* 
  * About Section
  */
@@ -180,11 +173,10 @@ section,html, body {
     color: #fff;
     padding: 130px 0;
     position: relative;
-    max-width: 44.766%;
+    
     display: flex;
     flex-direction: column;
     align-content: flex-start;
-    left: 12.7%;
 }
 
 .about p {

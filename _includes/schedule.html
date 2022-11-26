@@ -1,31 +1,26 @@
 <!-- Schedule section -->
 <section class="schedule">
   <div class="container">
-    <h1 class="text-start">Schedule</h1>
-    <p class="text-start small-subtitile">All times listed are in Central Daylight Time (CDT).</p>
-    <!-- column one -->
-    <div class="row d-flex justify-content-start justify-items-start">
-      <div class="col-5 column-one">
-        <h4 class="gradient-h2-one">{{site.event.saturday.day}}</h4>
-        <!-- This is the start of the listing of the slots -->
-        <div class="question row row-cols-2">
-        {% for item in site.event.saturday.slots %}
-          <p class="col text-start">{{item.time}}</p>
-          <p class="col text-start">{{ item.name}}</p>
-          {% endfor %}
-        </div>
+    <!-- flex row container -->
+    <div class="row d-flex justify-content-around justify-items-start" >
+      <div class="offset-1 col-11  pb-4">
+        <h1 class="text-start" style="padding-left: calc(var(--mdb-gutter-x)*0.5);">Schedule</h1>
+        <p class="text-start small-subtitile" style="padding-left: calc(var(--mdb-gutter-x)*0.5);">All times listed are in Central Daylight Time (CDT).</p>
       </div>
       
-      <!-- column two -->
-      <div class="col-5 column-two">
-        <h4 class="gradient-h2-two">{{site.event.saturday.day}}</h4>
+      <!-- columns-->
+      {% for day in site.event.days %}
+      <div class="col" style="max-width: 32%;">
+        <h4 class="{{day.gradient}}">{{day.day}}</h4>
         <!-- This is the start of the listing of the slots -->
-        <div class="question row row-cols-2">
-          {% for item in site.event.sunday.slots %}
-            <p class="col text-start">{{item.time}}</p>
-            <p class="col text-start">{{ item.name}}</p>
-            {% endfor %}
+          <div class="question row">
+          {% for item in day.slots %}
+            <p class="col-4">{{item.time}}</p>
+            <p class="col-8">{{ item.name}}</p>
+          {% endfor %}
           </div>
         </div>
+      {% endfor %}
+
   </div>
 </section>

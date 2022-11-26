@@ -2,19 +2,19 @@
 .schedule .row {
     display: grid;
     grid-template-areas: 'col1 col2';
-  }
+}
 
-  .schedule .small-subtitile {
+.schedule .small-subtitile {
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 122%;
-/* identical to box height, or 31px */
+    /* identical to box height, or 31px */
 
 
-color: #F7F7F7;
-  }
+    color: #F7F7F7;
+}
 
 
 /* Gradients */
@@ -31,24 +31,24 @@ color: #F7F7F7;
     background: linear-gradient(90deg, #EC6B97 7.95%, #F7BB97 110.36%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
 }
 
 .gradient-h2-two {
     font-family: 'DM Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 122%;
-/* or 43px */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 122%;
+    /* or 43px */
 
+    /* Minimize width of header */
+    max-width: fit-content;
+    margin: 0%;
+    margin-block-end: 0%;
 
-background: linear-gradient(89.83deg, #1FA2FF 0.14%, #12D8FA 56.37%, #A6FFCB 113.78%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+    background: linear-gradient(89.83deg, #1FA2FF 0.14%, #12D8FA 56.37%, #A6FFCB 113.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* Footer CSS */
@@ -85,7 +85,7 @@ text-fill-color: transparent;
     align-content: flex-end;
     justify-content: center;
     align-items: stretch;
-    margin: 5rem auto 5rem auto;
+    margin: 2rem auto 0rem auto;
 }
 
 .footer .social-links {
@@ -99,7 +99,7 @@ text-fill-color: transparent;
 }
 
 .footer h3 {
-    display:flex;
+    display: flex;
     align-self: center;
     justify-content: center;
     font-weight: 200;

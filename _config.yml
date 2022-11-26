@@ -97,56 +97,56 @@ event:
         title: "BUILD."
         description: >
           Develop solutions with the potential to aid and impact our community
+  days:
+    # Day 1 schedule
+    - day: "February 11th | Saturday"
+      gradient: gradient-h2-one
+      slots:
+        - time: "8:00AM"
+          name: "Check-in"
+        - time: "9:00AM"
+          name: "Opening Ceremony"
+        - time: "9:45AM"
+          name: "Team Formation"
+        - time: "11:00AM"
+          name: "Hacking Begins"
+        - time: "11:00AM"
+          name: "Destressing Area Opens"
+        - time: "1:00PM"
+          name: "Introduction to Python Workshop"
+        - time: "2:00PM"
+          name: "Web Development Workshop"
+        - time: "3:00PM"
+          name: "Wokring with APIs Workshop"
+        - time: "4:00PM"
+          name: "Painting Competition with MS Paint"
+        - time: "7:00PM"
+          name: "Resume Building & Technical Interview Workshop"
+        - time: "9:00PM"
+          name: "Mobile App Development"
+        - time: "10:00PM"
+          name: "Hacking Continues"
 
-  # Day 1 schedule
-  saturday:
-    day: "February 11th | Saturday"
-    slots:
-      - time: "8:00AM"
-        name: "Check-in"
-      - time: "9:00AM - 9:30AM"
-        name: "Opening Ceremony"
-      - time: "9:45AM - 10:45AM"
-        name: "Team Formation"
-      - time: "11:00AM"
-        name: "Hacking Begins"
-      - time: "11:00AM"
-        name: "Destressing Area Opens"
-      - time: "1:00PM - 1:30PM"
-        name: "Introduction to Python Workshop"
-      - time: "2:00PM - 3:00PM"
-        name: "Web Development Workshop"
-      - time: "3:00PM - 4:00PM"
-        name: "Wokring with APIs Workshop"
-      - time: "4:00PM - 5:00PM"
-        name: "Painting Competition with MS Paint"
-      - time: "7:00PM - 8:00PM"
-        name: "Resume Building & Technical Interview Workshop"
-      - time: "9:00PM - 10:00PM"
-        name: "Mobile App Development"
-      - time: "10:00PM"
-        name: "Hacking Continues"
-
-  # Day 2 schedule
-  sunday:
-    day: "February 12th | Sunday"
-    slots:
-      - time: "0:00AM"
-        name: "Breakfast"
-      - time: "9:00AM"
-        name: "Meditation Space"
-      - time: "10:00AM - 3:00PM"
-        name: "Sponsor Space"
-      - time: "12:00AM - 1PM"
-        name: "Women in Industry Panel"
-      - time: "1:00PM - 3:00PM"
-        name: "Career Fair"
-      - time: "3:00PM"
-        name: "Hacking Stops"
-      - time: "3:10PM - 5:10PM"
-        name: "Judging Period"
-      - time: "5:30PM"
-        name: "Award Ceremony"
+    # Day 2 schedule
+    - day: "February 12th | Sunday"
+      gradient: gradient-h2-two
+      slots:
+        - time: "0:00AM"
+          name: "Breakfast"
+        - time: "9:00AM"
+          name: "Meditation Space"
+        - time: "10:00AM"
+          name: "Sponsor Space"
+        - time: "12:00AM"
+          name: "Women in Industry Panel"
+        - time: "1:00PM"
+          name: "Career Fair"
+        - time: "3:00PM"
+          name: "Hacking Stops"
+        - time: "3:10PM"
+          name: "Judging Period"
+        - time: "5:30PM"
+          name: "Award Ceremony"
 
   # Frequently asked questions.
   faq:
@@ -177,14 +177,18 @@ event:
       sponsors:
         - name: "HEB."
           image: "images/Sponsors/HEB/heb-logo@logotyp.us.svg"
+          url: "https://fronteradevs.com"
     - tier_name: "Community"
       sponsors:
         - name: "Crowdstrike"
           image: "images/Sponsors/Crowdstrike/CrowdStrike_Logos/CS_Logos_2020_FullBlack_FullBlack.png"
+          url: "https://fronteradevs.com"
     - tier_name: "Supporter"
       sponsors:
         - name: "Rosenfeld Media"
           image: "images/Sponsors/Rosenfeld_Media/RM-Logo_logotype.png"
+          url: "https://fronteradevs.com"
+
       #followup with taskade to see if they actually want sponsorship
 
   # This is the message you'll receive once you've registered.

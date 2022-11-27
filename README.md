@@ -60,5 +60,9 @@ When you need to add a new section, take advantage of the components system, in 
 #### Adding more variables
 If you need to add more variables make sure to put them in the '_config.yml' file, in order to streamline this process and make it clear the variables that we are using throughout the entire site. To reference a specific variable make sure to prefix the relative path in the file with 'site.'. The event container in the config file helps to seperate variables that are related to the event from other general purposes variabels.
 
+## CSS
+'original.css' is self explanatory, this is the file that includes all of the css for the entire site, and it sits at the bottom of the CSS stack, so you can override these styles in other files and so on. 
+Put any new styles in base.css. **I recommend that you divide the styles by the sections they modify and show at what level they sit from the root of their respective section.**
+
 ## WARNING
 NEVER MAKE ANY CHANGES TO THE FILES WITHIN '_site' YOU WILL LOSE ALL OF YOUR PROGRESS AND YOU WILL, MOST DEFINETELY, CRY AND WISHED THAT YOU HAD BEEN WISER. You will never need to modify the files in '_site', so only modify the sections with their respective files in '_includes' and your pages in the main folder.

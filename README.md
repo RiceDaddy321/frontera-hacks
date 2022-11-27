@@ -1,4 +1,4 @@
-# MLH/mlh-hackathon-boilerplate
+# Frontera Hacks Website Docs
 
 This is a hackathon boilerplate created by [Major League Hacking][mlh-github]. Using [Jekyll][jekyll], it has a extensible [configuration][config] that covers basic event information. You can then fork the website and have it hosted free through [GitHub Pages][github-pages]. It's free to use.
 
@@ -45,35 +45,20 @@ For windows use [RubyInstaller][rubyinstall]
 [rubyinstall]: https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.7.6-1/rubyinstaller-2.7.6-1-x64.exe
 [install-gem]: https://rubygems.org/pages/download
 
-### Setting up a custom domain
+### Backend
+In genera, We don't have to worry about that because Firebase is handling all of that for us. To add additional backend features that are not supported by the free tier (like functions and API calls), you will need to upgrade to the blaze plan. 
 
-Want to configure for your own custom domain? Great! Through our excellent partners [Domain.com][domain-com], Major League Hacking is offering free domains to student hackathon organizers. Reach out to [hi@mlh.io][email-mlh] to obtain your free coupon code.
+For changes to how we interact with firebase, edit 'firebase.html' which is located in '/_includes/analytics/firebase.html' and look at the [firebase documentation][firebase-docs]. Analytics is already set up; however, to monitor specfic actions look more into that.
 
-1. Register your domain
-2. Update the domain `www` to `CNAME [github username].github.io`
-3. Update the domain `@` to `A 192.30.252.153` and `A 192.30.252.154`
-4. Update the `CNAME` in your GitHub fork of `mlh-hackathon-boilerplate` to your new domain (i.e. `examplehacks.com`)
+[firebase-docs]: https://firebase.google.com/docs/guides
 
-[Reference: GitHub - Setting up an apex domain][github-apex-domain]
+### Making changes
+This site is structured to support more pages if needed by simply using the default.html layout in the '_layouts' folder. The layout already has the head,header, footer, and analytics ready to go when you template it. 
 
-[domain-com]: https://domain.com/mlh
-[email-mlh]: mailto:hi@mlh.io
-[github-apex-domain]: https://help.github.com/articles/setting-up-an-apex-domain/
+When you need to add a new section, take advantage of the components system, in order to reduce the noise from other code. This also allows for easy reuse of components in other pages in the future, by abstracting the existing components and making slots to make the components more resuable. 
 
-### Setting up SSL
+#### Adding more variables
+If you need to add more variables make sure to put them in the '_config.yml' file, in order to streamline this process and make it clear the variables that we are using throughout the entire site. To reference a specific variable make sure to prefix the relative path in the file with 'site.'. The event container in the config file helps to seperate variables that are related to the event from other general purposes variabels.
 
-GitHub Pages now provides you with an option to Enforce HTTPS which will create an SSL certificate for you. All you need is to select the Enforce HTTPS checkmark when setting up custom domain in the step above.
-
-Give the process some time, but if it has not completed after several minutes, click **Remove** next to your domain name, retype the domain name, and then click **Save**. This will restart the SSL issuing process.
-
-If you setup HTTPS correctly, make sure you do not refernece HTTP anywhere on your website. Servinig [mixed][mixed] content will make your website less secure.
-
-[mixed]: https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https#resolving-problems-with-mixed-content
-
-## Contributing
-
-Our boilerplate is written entirely in [Jekyll][jekyll], which GitHub automatically compiles. This dramatically reduces the technical barrier needed to setup a hackathon website. We'd love to receive your contributions towards making this even better. A couple of things to note:
-
-- We can't accept custom plugins because it's not supported by [GitHub Pages][github-pages]
-- If adding any external images or components, please ensure you have the correct permission to use them
-- We advise creating a GitHub issue first explaining the issue
+## WARNING
+NEVER MAKE ANY CHANGES TO THE FILES WITHIN '_site' YOU WILL LOSE ALL OF YOUR PROGRESS AND YOU WILL, MOST DEFINETELY, CRY AND WISHED THAT YOU HAD BEEN WISER. You will never need to modify the files in '_site', so only modify the sections with their respective files in '_includes' and your pages in the main folder.

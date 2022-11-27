@@ -5,8 +5,14 @@ layout: default
 {% include hero.html %}
 <section class="about">
   <div class="container">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
-      {{ site.event.about.description | markdownify }}
+
+    <h1>About</h1>
+    <div class="container">
+      <div class="">
+        <p>
+        {{ site.event.about.description | markdownify }}
+      </p>
+      </div>
     </div>
   </div>
 </section>
@@ -15,7 +21,7 @@ layout: default
   <div class="container">
     <div class="items row">
       {% for section in site.event.info.sections %}
-        <div class="col-xs-12 col-sm-4 text-center">
+        <div class="col-xs-12 col-sm-12 col-md-4 text-center">
           <div class="item">
             <img src="{{ section.image }}" />
             <h1>{{ section.title }}</h1>
@@ -29,21 +35,6 @@ layout: default
 
 {% include schedule.html %}
 
+{% include sponsors.html %}
 
-<!-- FAQ section -->
-<section class="faq">
-  <div class="container">
-    <h1 class="text-center">FAQ</h1>
-    <div class="row">
-      <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-        {% for item in site.event.faq %}
-        <div class="question col-xs-12 col-sm-12">
-          <h2>{{ item.question }}</h2>
-          <hr>
-          {{ item.answer | markdownify }}
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-</section>
+{% include faq.html %}

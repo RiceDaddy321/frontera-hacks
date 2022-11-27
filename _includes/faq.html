@@ -1,0 +1,14 @@
+<!-- FAQ section -->
+<section class="faq container-fluid min-vh-85">
+  <div class="container">
+      <h1 class="text-start">Frequently Asked Questions</h1>
+      <div class="row">
+          {% for item in site.event.faq %}
+          <div class="question col-6">
+            <h2 class="question-gradient">{{ item.question }}</h2>
+            {{ item.answer | markdownify }}
+          </div>
+          {% endfor %}
+      </div>
+    </div>
+  </section>

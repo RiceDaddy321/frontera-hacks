@@ -1,0 +1,63 @@
+<!-- Sponsors section
+<section class="sponsors">
+  <div class="container">
+    <h1 class="section-title">Sponsors</h1>
+    <div class="container px-4 py-5">
+      {% for tiers in site.event.sponsors %}
+      <h1 class="pb-2 border-bottom">{{tiers.tier_name}}</h1>
+      <div
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5"
+      >
+        {% for sponsor in tiers.sponsors%}
+        <img
+          class="w-25 m-5"
+          src="{{sponsor.image}}"
+          alt="{{ sponsor.name }}"
+        />
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <img
+    src="images/transition.svg"
+    style="background-color: #f9f9f9; width: 100vw"
+    alt=""
+    class="svg"
+  />
+</section> -->
+
+<!-- section wrapper -->
+<section class="sponsors pt-5">
+  <!-- formatting container -->
+  <div class="container ps-5">
+    <!-- align sponsor tiers -->
+    <div class="row align-items-center">
+      {% for tiers in site.event.sponsors %}
+      <div class="col-12 mb-5">
+        <h2 class="section-title mb-3">{{tiers.tier_name}}</h2>
+        <!-- the row for the sponsors -->
+        <div class="row">
+          {% for sponsor in tiers.sponsors%}
+          <div class="bg-image hover-overlay hover-zoom hover-shadow ripple" style="max-width: fit-content">
+            <img class="sponsor" src="{{sponsor.image}}" alt="{{ sponsor.name }}" />
+            <!-- just a style div -->
+            <a href="{{sponsor.url}}" target="_blank" class="mask" style="
+                background: linear-gradient(
+                  45deg,
+                  rgba(29, 236, 197, 0.5),
+                  rgba(91, 14, 214, 0.5) 100%
+                );
+              ">
+
+
+            </a>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  <img src="images/transition.svg" style="background-color: #f9f9f9; width: 100vw;     margin-top: -6%;" alt="" class="svg" />
+</section>

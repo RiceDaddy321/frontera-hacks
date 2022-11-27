@@ -19,24 +19,39 @@ url: "http://fronterahacks.com/"
 style:
   theme: "original"
 
-# This will help you track who's visiting your website.
-tracking:
-  google_analytics: "UA-43729070-14"
-
 # Let people connect & engage with you through social media.
 social:
-  twitter_handle: "MLHacks"
-
+  - name: "Twitter"
+    handle: "fronteradevsrgv"
+    img: "images/social/twitter-black.svg"
+    url: "https://twitter.com/fronteradevsrgv"
+  - name: "Facebok"
+    handle: "fronteradevsutrgv"
+    img: "images/social/facebook-black.svg"
+    url: "https://www.facebook.com/fronteradevsutrgv"
+  - name: "YouTube"
+    handle: "Frontera Devs UTRGV"
+    img: "images/social/youtube-black.svg"
+    url: "https://www.youtube.com/channel/UCXHBRJsa9orzXiwIPGvNGSw"
+  - name: "Discord"
+    handle: "Frontera Devs UTRGV"
+    img: "images/social/discord-black.svg"
+    url: "https://discord.com/invite/fbf3HhN"
+  - name: "Instagram"
+    handle: "fronteradevs"
+    img: "images/social/instagram-black.svg"
+    url: "https://www.instagram.com/fronteradevs/"
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
   title: "Frontera Hacks | 11-12 February 2023"
-  description: "Frontera Hacks is an inaugural 24-hour hackathon hosted by Frontera Devs."
+  description: "Frontera Hacks is the an inaugural 24-hour hackathon hosted by Frontera Devs."
   image: "_site/images/favicon.ico"
 
 # Event information.
 event:
   name: "Frontera Hacks"
-  description: "Frontera Hacks is an inaugural 24-hour hackathon hosted by Frontera Devs."
+  description: "Frontera Hacks is the an inaugural 24-hour hackathon hosted by Frontera Devs."
+  tagline: "Accelerating innovation in the RGV"
   date: "11-12 February 2023"
   location: "Weslaco, TX, United States"
 
@@ -54,6 +69,10 @@ event:
           redirect_uri: "https://mlh.github.io/mlh-hackathon-boilerplate/success.html"
       - text: "Sponsor"
         href: "mailto:sponsorship@website.com"
+    register:
+        text: "Register"
+        img: "images/register_banner.svg"
+        href: "https://airtable.com/shr9XGx5Rde2iPLbh"
 
   about:
     description: >
@@ -63,63 +82,67 @@ event:
   info:
     sections:
       - image: "images/image1.png"
-        title: "LEARN."
+        title: "CONNECT."
         description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
+          Meet developers interested in shaping the future of innovation at Frontera Hacks
       - image: "images/image2.png"
+        title: "GROW."
+        description: >
+          Advance your technical and interpersonal skills through our hands-on workshops 
+      - image: "images/image3.png"
         title: "BUILD."
         description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
-      - image: "images/image3.png"
-        title: "SHARE."
-        description: >
-          We can write something nice with a graphic (as above) to make the event more appealing.
+          Develop solutions with the potential to aid and impact our community
+  days:
+    # Day 1 schedule
+    - day: "February 11th | Saturday"
+      gradient: gradient-h2-one
+      slots:
+        - time: "8:00AM"
+          name: "Check-in"
+        - time: "9:00AM"
+          name: "Opening Ceremony"
+        - time: "9:45AM"
+          name: "Team Formation"
+        - time: "11:00AM"
+          name: "Hacking Begins"
+        - time: "11:00AM"
+          name: "Destressing Area Opens"
+        - time: "1:00PM"
+          name: "Introduction to Python Workshop"
+        - time: "2:00PM"
+          name: "Web Development Workshop"
+        - time: "3:00PM"
+          name: "Wokring with APIs Workshop"
+        - time: "4:00PM"
+          name: "Painting Competition with MS Paint"
+        - time: "7:00PM"
+          name: "Resume Building & Technical Interview Workshop"
+        - time: "9:00PM"
+          name: "Mobile App Development"
+        - time: "10:00PM"
+          name: "Hacking Continues"
 
-  # Day 1 schedule
-  saturday:
-    day: "October 16th, Saturday"
-    slots:
-      - time: "0:00AM"
-        name: "Check-in"
-      - time: "0:00AM"
-        name: "Opening Ceremony"
-      - time: "0:00AM"
-        name: "Team Formation"
-      - time: "0:00AM"
-        name: "Hacking Begins"
-      - time: "0:00AM"
-        name: "Introduction to Python"
-      - time: "0:00AM"
-        name: "AI Project Workshop"
-      - time: "0:00AM"
-        name: "Web Development"
-      - time: "0:00AM"
-        name: "Paint Competition with MS Paint"
-      - time: "0:00AM"
-        name: "Resume Workshop"
-
-  # Day 2 schedule
-  sunday:
-    day: "October 17th, Sunday"
-    slots:
-      - time: "0:00AM"
-        name: "Breakfast"
-      - time: "0:00AM"
-        name: "Meditation Space"
-      - time: "0:00AM"
-        name: "TBD"
-      - time: "0:00AM"
-        name: "Women in Industry Panel"
-      - time: "0:00AM"
-        name: "Career Fair"
-      - time: "0:00AM"
-        name: "Hacking Stops"
-      - time: "0:00AM"
-        name: "Lunch"
-      - time: "0:00AM"
-        name: "Award Ceremony"
-      - time: "0:00AM"
-        name: "Goodbye!"
+    # Day 2 schedule
+    - day: "February 12th | Sunday"
+      gradient: gradient-h2-two
+      slots:
+        - time: "0:00AM"
+          name: "Breakfast"
+        - time: "9:00AM"
+          name: "Meditation Space"
+        - time: "10:00AM"
+          name: "Sponsor Space"
+        - time: "12:00AM"
+          name: "Women in Industry Panel"
+        - time: "1:00PM"
+          name: "Career Fair"
+        - time: "3:00PM"
+          name: "Hacking Stops"
+        - time: "3:10PM"
+          name: "Judging Period"
+        - time: "5:30PM"
+          name: "Award Ceremony"
 
   # Frequently asked questions.
   faq:
@@ -143,6 +166,26 @@ event:
     - question: "What if I need special accomodations?"
       answer: >
         Frontera Hacks prioritizes accessibility and accomodations that make our event welcoming for everyone. Please list any special accommodations in your admissions, or contact us with any other concerns.
+
+  # sponsors list
+  sponsors:
+    - tier_name: "Platinum"
+      sponsors:
+        - name: "HEB."
+          image: "images/Sponsors/HEB/heb-logo@logotyp.us.svg"
+          url: "https://fronteradevs.com"
+    - tier_name: "Community"
+      sponsors:
+        - name: "Crowdstrike"
+          image: "images/Sponsors/Crowdstrike/CrowdStrike_Logos/CS_Logos_2020_FullBlack_FullBlack.png"
+          url: "https://fronteradevs.com"
+    - tier_name: "Supporter"
+      sponsors:
+        - name: "Rosenfeld Media"
+          image: "images/Sponsors/Rosenfeld_Media/RM-Logo_logotype.png"
+          url: "https://fronteradevs.com"
+
+      #followup with taskade to see if they actually want sponsorship
 
   # This is the message you'll receive once you've registered.
   register:

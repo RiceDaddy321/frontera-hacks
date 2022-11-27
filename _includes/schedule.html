@@ -1,32 +1,26 @@
+<!-- Schedule section -->
 <section class="schedule">
-    <div class="container">
-      <h1 class="text-center">FAQ</h1>
-      <!-- column one -->
-      <div class="row">
-        <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-            <h2>{{ site.event.saturday.day }}</h2>
-            <!-- This is the start of the listing of the slots -->
-            {% for item in site.event.saturday.slots %}
-            <div class="question col-xs-12 col-sm-12">
-                {{item.time | markdownify }}
-                {{ item.name | markdownify }}
-                <hr>
-            </div>
-            {% endfor %}
-        </div>
-        <!-- column one -->
-        <div class="row">
-          <div class="col-xs-12 col-sm-8 col-sm-offset-2">
-              <h2>{{ site.event.sunday.day }}</h2>
-              <!-- This is the start of the listing of the slots -->
-              {% for item in site.event.sunday.slots %}
-              <div class="question col-xs-12 col-sm-12">
-                  {{item.time | markdownify }}
-                  {{ item.name | markdownify }}
-                  <hr>
-              </div>
-              {% endfor %}
-          </div>
+  <div class="container">
+    <!-- flex row container -->
+    <div class="row d-flex justify-content-around justify-items-start" >
+      <div class="offset-1 col-11  pb-4">
+        <h1 class="text-start" style="padding-left: calc(var(--mdb-gutter-x)*0.5);">Schedule</h1>
+        <p class="text-start small-subtitile" style="padding-left: calc(var(--mdb-gutter-x)*0.5);">All times listed are in Central Daylight Time (CDT).</p>
       </div>
-    </div>
-  </section>
+      
+      <!-- columns-->
+      {% for day in site.event.days %}
+      <div class="col" style="max-width: 32%;">
+        <h4 class="{{day.gradient}}">{{day.day}}</h4>
+        <!-- This is the start of the listing of the slots -->
+          <div class="question row">
+          {% for item in day.slots %}
+            <p class="col-4">{{item.time}}</p>
+            <p class="col-8">{{ item.name}}</p>
+          {% endfor %}
+          </div>
+        </div>
+      {% endfor %}
+
+  </div>
+</section>

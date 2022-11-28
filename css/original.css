@@ -210,6 +210,10 @@ background-clip: text;
 text-fill-color: transparent;
 }
 
+.about .description {
+  width: 70%;
+}
+
 /*
  * Info Section
  */
@@ -332,5 +336,14 @@ text-fill-color: transparent;
   .hero hr {
     border-top-width: 8px;
     top: -8px;
+  }
+
+  /* about */
+  .about .description {
+    width: 100%;
+  }
+
+  .about .container {
+    text-align: center;
   }
 }

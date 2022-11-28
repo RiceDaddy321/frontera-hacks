@@ -1,26 +1,26 @@
 <!-- Schedule section -->
-<section class="schedule">
+<section class="schedule pb-5 mb-5">
   <div class="container">
     <!-- flex row container -->
-    <div class="row d-flex justify-content-around justify-items-start" >
+    <div class="row text-start">
       <div class="offset-1 col-11  pb-4">
-        <h1 class="text-start" style="padding-left: calc(var(--mdb-gutter-x)*0.5);">Schedule</h1>
-        <p class="text-start small-subtitile" style="padding-left: calc(var(--mdb-gutter-x)*0.5);">All times listed are in Central Daylight Time (CDT).</p>
+        <h1>Schedule</h1>
+        <p class="small-subtitile">All times listed are in Central Daylight Time (CDT).</p>
       </div>
-      
+
       <!-- columns-->
       {% for day in site.event.days %}
-      <div class="col" style="max-width: 32%;">
+      <div class="col-11 col-md-5 offset-1">
         <h4 class="{{day.gradient}}">{{day.day}}</h4>
         <!-- This is the start of the listing of the slots -->
-          <div class="question row">
+        <div class="question row">
           {% for item in day.slots %}
-            <p class="col-4">{{item.time}}</p>
-            <p class="col-8">{{ item.name}}</p>
+          <p class="col-4">{{item.time}}</p>
+          <p class="col-8">{{ item.name}}</p>
           {% endfor %}
-          </div>
         </div>
+      </div>
       {% endfor %}
 
-  </div>
+    </div>
 </section>

@@ -6,3 +6,5 @@ gem "jekyll"
 gem "jekyll-watch"
 gem "kramdown"
 gem "scss-lint"
+gem 'bootstrap', '~> 5.2.3'
+

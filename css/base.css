@@ -1,8 +1,8 @@
 /* schedule section */
-.schedule .row {
+/* .schedule .row {
     display: grid;
     grid-template-areas: 'col1 col2';
-}
+} */
 
 .schedule .small-subtitile {
     font-family: 'DM Sans';
@@ -27,7 +27,6 @@
     line-height: 122%;
     /* or 43px */
 
-
     background: linear-gradient(90deg, #EC6B97 7.95%, #F7BB97 110.36%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -40,11 +39,6 @@
     font-size: 30px;
     line-height: 122%;
     /* or 43px */
-
-    /* Minimize width of header */
-    max-width: fit-content;
-    margin: 0%;
-    margin-block-end: 0%;
 
     background: linear-gradient(89.83deg, #1FA2FF 0.14%, #12D8FA 56.37%, #A6FFCB 113.78%);
     -webkit-background-clip: text;
@@ -106,4 +100,11 @@
     font-weight: lighter;
     font-size: x-small;
     margin-bottom: 6vh;
+}
+
+/* bootstrap mods */
+.sponsors .btn-outline-light {
+    --mdb-btn-hover-color: rgb(115, 170, 64);
+    --mdb-btn-hover-bg: linear-gradient(90deg, #FD005A 5.49%, #0066FF 99.3%);
+    --mdb-btn-hover-border-color:  rgb(100, 148, 56);
 }

@@ -20,7 +20,8 @@ Advantages:
 1. Create a [GitHub][create-account] account if you haven't already
 2. Fork this repository to your own account. [Click here to fork this repo][fork-repo]
 3. Edit [`_config.yml`][config] to configure for your own hackathon website
-4. That's it - you should be able to access at `https://[github username].github.io/mlh-hackathon-boilerplate/`
+4. Download [ruby][Ruby] version 2.7.0
+5. That's it - you should be able to access at `https://[github username].github.io/mlh-hackathon-boilerplate/`
 
 [create-account]: https://github.com/join
 [fork-repo]: https://github.com/MLH/mlh-hackathon-boilerplate/fork
@@ -30,7 +31,7 @@ Advantages:
 If you would like to populate and test the website locally, follow these steps:
 
 1. Install Jekyll prerequisites by following one of the [guides][jekyll-guides]
-    1. Install Ruby version 2.76.<br />
+    1. Install Ruby version 2.7.0.<br />
 For mac run ```brew install ruby@2.7```.<br />
 For windows use [RubyInstaller][rubyinstall]
     2. Download [RubyGem][install-gem]

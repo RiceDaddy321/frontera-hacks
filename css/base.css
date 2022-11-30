@@ -4,6 +4,11 @@
     grid-template-areas: 'col1 col2';
 } */
 
+.bottom-section {
+    background-color: #F9F9F9;
+    color: #000000;
+}
+
 .schedule .small-subtitile {
     font-family: 'DM Sans';
     font-style: normal;

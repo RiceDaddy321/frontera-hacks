@@ -1,10 +1,10 @@
 <!-- FAQ section -->
-<section class="faq container-fluid min-vh-85">
+<section class="faq">
   <div class="container">
       <h1 class="text-start">Frequently Asked Questions</h1>
       <div class="row">
           {% for item in site.event.faq %}
-          <div class="question col-6">
+          <div class="question col-12 pb-4 col-md-6 pb-md-0">
             <h2 class="question-gradient">{{ item.question }}</h2>
             {{ item.answer | markdownify }}
           </div>

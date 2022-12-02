@@ -1,26 +1,25 @@
 ---
 layout: default
 ---
-<!-- This site depends on a lot of things, but this whole page is the body of the website -->
-{% include hero.html %}
-<section class="about">
-  <div class="container">
 
+<!-- This site depends on a lot of things, but this whole page is the body of the website -->
+<div class="top-section">
+  {% include hero.html %}
+  <section class="about">
     <div class="container">
-      <h1>About</h1>
-      <div class="description">
-        <p>
-        {{ site.event.about.description | markdownify }}
-      </p>
+      <div class="container">
+        <h1>About</h1>
+        <div class="description">
+          <p>{{ site.event.about.description | markdownify }}</p>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- hackathon tenants -->
-<section class="info">
-  <div class="container">
-    <div class="items row">
-      {% for section in site.event.info.sections %}
+  </section>
+  <!-- hackathon tenants -->
+  <section class="info">
+    <div class="container">
+      <div class="items row">
+        {% for section in site.event.info.sections %}
         <div class="col-xs-12 col-sm-12 col-md-4 text-center">
           <div class="item">
             <img src="{{ section.image }}" />
@@ -28,17 +27,14 @@ layout: default
             <p>{{ section.description }}</p>
           </div>
         </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
     </div>
-  </div>
-</section>
-
-{% include schedule.html %}
-
-{% include sponsorPlaceHolder.html %}
-
-<section class="bottom-section">
-  {% include transition.html %}
-  
+  </section>
+  {% include schedule.html %} 
+  {% include sponsorPlaceHolder.html %}
+</div>
+<img src="images/transition.png" style="width: 100vw;" alt="" />
+<section class="fluid-container bottom-section" style="background-color: #f9f9f9;color: #000;">
   {% include faq.html %}
 </section>

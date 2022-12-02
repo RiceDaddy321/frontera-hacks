@@ -3,10 +3,9 @@
     display: grid;
     grid-template-areas: 'col1 col2';
 } */
-
-.bottom-section {
-    background-color: #F9F9F9;
-    color: #000000;
+* {
+    border-radius: 0%;
+    border: none;
 }
 
 .schedule .small-subtitile {

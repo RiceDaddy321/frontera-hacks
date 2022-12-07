@@ -76,8 +76,10 @@ section,html, body {
   padding-right: 4rem;
   align-items: flex-start;
   top: 0;
+  right: 0;
+  /* height: 6vh; */
   position: fixed;
-  width: 100vw;
+  width: min-content;
   flex-wrap: nowrap;
 }
 

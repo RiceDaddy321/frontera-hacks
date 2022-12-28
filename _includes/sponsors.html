@@ -10,16 +10,10 @@
         <!-- the row for the sponsors -->
         <div class="row">
           {% for sponsor in tiers.sponsors%}
-          <div class="bg-image hover-overlay hover-zoom hover-shadow ripple" style="max-width: fit-content">
+          <div class="bg-image hover-overlay hover-zoom ripple" style="max-width: fit-content">
             <img class="sponsor" src="{{sponsor.image}}" alt="{{ sponsor.name }}" />
             <!-- just a style div -->
-            <a href="{{sponsor.url}}" target="_blank" class="mask" style="
-                background: linear-gradient(
-                  45deg,
-                  rgba(29, 236, 197, 0.5),
-                  rgba(91, 14, 214, 0.5) 100%
-                );
-              ">
+            <a href="{{sponsor.url}}" target="_blank" class="mask" >
             </a>
           </div>
           {% endfor %}

@@ -169,21 +169,14 @@ event:
 
   # sponsors list
   sponsors:
-    - tier_name: "Platinum"
-      sponsors:
-        - name: "HEB."
-          image: "images/Sponsors/HEB/heb-logo@logotyp.us.svg"
-          url: "https://fronteradevs.com"
-    - tier_name: "Community"
-      sponsors:
-        - name: "Crowdstrike"
-          image: "images/Sponsors/Crowdstrike/CrowdStrike_Logos/CS_Logos_2020_FullBlack_FullBlack.png"
-          url: "https://fronteradevs.com"
     - tier_name: "Supporter"
       sponsors:
         - name: "Rosenfeld Media"
           image: "images/Sponsors/Rosenfeld_Media/RM-Logo_logotype.png"
-          url: "https://fronteradevs.com"
+          url: "https://rosenfeldmedia.com/"
+        - name: "Stand Out Stickers"
+          image: "images/Sponsors/stand_out_stickers/StandOut_Stickers_Logo_RGB-1.png"
+          url: "http://hackp.ac/mlh-StandOutStickers-hackathons"
 
       #followup with taskade to see if they actually want sponsorship
 

@@ -49,6 +49,12 @@
     -webkit-text-fill-color: transparent;
 }
 
+.gradient-hero-cta {
+    background: linear-gradient(89.83deg, #12C2E9 0.14%, #C471ED 56.37%, #F64F59 113.78%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* Footer CSS */
 .footer {
     background: #F9F9F9;

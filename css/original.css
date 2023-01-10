@@ -60,6 +60,16 @@ body {
   width: 10%;
 }
 
+#register-button {
+  background-color: #FFFFFF;
+  color: #D793E4;
+  transition: all 1s ease-out;
+}
+#register-button:hover {
+  color: #FFFFFF;
+  background-color: #D793E4;
+}
+
 .badges {
   display: flex;
   flex-direction: row-reverse;
@@ -108,6 +118,7 @@ body {
   /* background-color: #F5699C; */
   /* min-height: 100vh; */
   margin: auto;
+  padding-top: 110px;
 }
 
 #sparkle-stars {
@@ -239,7 +250,7 @@ body {
 }
 
 .about .description {
-  width: 70%;
+  display: inline-block;
 }
 
 /*

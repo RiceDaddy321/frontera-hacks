@@ -42,6 +42,7 @@ body {
     rgb(9, 13, 30) 101.7%
   );
   color: #f7f8fa;
+  position: relative;
 }
 
 .bottom-section {
@@ -61,13 +62,13 @@ body {
 }
 
 #register-button {
-  background-color: #FFFFFF;
-  color: #D793E4;
+  background-color: #ffffff;
+  color: #d793e4;
   transition: all 1s ease-out;
 }
 #register-button:hover {
-  color: #FFFFFF;
-  background-color: #D793E4;
+  color: #ffffff;
+  background-color: #d793e4;
 }
 
 .badges {
@@ -87,6 +88,16 @@ body {
 }
 
 /* sponsor section */
+
+.wrap-layer {
+  position: relative;
+}
+.text-layer {
+  position: absolute;
+  width: 100%;
+  height: auto;
+}
+
 .sponsor {
   width: 300px;
 }
@@ -97,12 +108,12 @@ body {
 /*
  * Hero Section
  */
- .call-to-action {
+.call-to-action {
   position: relative;
- }
- .call-to-action h4 {
+}
+.call-to-action h4 {
   display: inline;
- }
+}
 
 #floating {
   position: absolute;
@@ -341,6 +352,15 @@ body {
  * Footer Section
  */
 
+#footer-mask-gradient {
+  position: absolute;
+  z-index: 0;
+  width: 100vw;
+  height: 50%;
+  bottom: 0px;
+  overflow: hidden;
+}
+
 .footer {
   color: #f9f9f9;
   padding: 30px 0;
@@ -394,7 +414,6 @@ body {
   .fh-logo #logo {
     width: 50%;
   }
-
 }
 
 @media (max-width: 576px) {

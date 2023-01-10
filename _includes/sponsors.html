@@ -1,9 +1,10 @@
 <!-- section wrapper -->
 <section class="sponsors pt-5">
+  <!-- floating gradient -->
   <!-- formatting container -->
-  <div class="container ps-5">
+  <div class="container ps-5 wrap-layer" style="position: relative;;">
     <!-- align sponsor tiers -->
-    <div class="row align-items-center">
+    <div class="row align-items-center text-layer">
       {% for tiers in site.event.sponsors %}
       <div class="col-12 mb-5">
         <h2 class="section-title mb-3">{{tiers.tier_name}}</h2>
@@ -21,7 +22,8 @@
       </div>
       {% endfor %}
     </div>
-  </div>
-  <img src="images/transition.svg" style="background-color: #f9f9f9; width: 100vw;     margin-top: -6%;" alt=""
-    class="svg" />
+    <div class="background-layer">
+      <img id="footer-mask-gradient" class="" src="/images/masks/GradientFooter.svg" alt="Frontera Devs Cyber Punk Core mask"></img>
+    </div>
+</div>
 </section>

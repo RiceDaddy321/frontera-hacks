@@ -3,13 +3,20 @@ layout: default
 ---
 
 <!-- This site depends on a lot of things, but this whole page is the body of the website -->
-<div class="top-section">
+<div class="top-section pb-5">
   {% include hero.html %}
   <!-- About Section -->
   <section class="about">
     <!-- container for all of the content -->
-    <div class="container d-flex flex-column-reverse flex-lg-row align-items-center justify-content-evenly">
-      <img class="me-0 me-lg-5 mt-md-5 mt-lg-0" id="about-stars" src="/images/masks/aboutStarts.svg" alt="About Stars">
+    <div
+      class="container d-flex flex-column-reverse flex-lg-row align-items-center justify-content-evenly"
+    >
+      <img
+        class="me-0 me-lg-5 mt-md-5 mt-lg-0"
+        id="about-stars"
+        src="/images/masks/aboutStarts.svg"
+        alt="About Stars"
+      />
       <!-- Container for the about paragraph -->
       <div class="container">
         <h1>About</h1>
@@ -21,8 +28,21 @@ layout: default
   </section>
   <!-- hackathon tenants -->
   <section class="info">
-    <div class="container">
-      <div class="items row">
+    <div class="container text-center">
+      <span
+        style="
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 122%;
+          /* or 24px */
+          letter-spacing: 0.15em;
+          color: #a2a2a2;
+        "
+        class="pb-5"
+        >AT FRONTERA HACKS, YOU WILL:</span
+      >
+      <div class="items row mt-5 pt-5">
         {% for section in site.event.info.sections %}
         <div class="col-xs-12 col-sm-12 col-md-4 text-center">
           <div class="item">
@@ -35,9 +55,6 @@ layout: default
       </div>
     </div>
   </section>
-  {% include schedulePlaceHolder.html %} 
-  {% include sponsors.html %}
+  {% include schedulePlaceHolder.html %} {% include sponsors.html %}
 </div>
-<section class="fluid-container bottom-section" style="background-color: #f9f9f9;color: #000;">
-  {% include faq.html %}
-</section>
+<section class="fluid-container bottom-section">{% include faq.html %}</section>

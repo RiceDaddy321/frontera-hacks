@@ -169,15 +169,24 @@ event:
 
   # sponsors list
   sponsors:
-    - tier_name: "Supporter"
-      sponsors:
-        - name: "Rosenfeld Media"
-          image: "images/Sponsors/Rosenfeld_Media/RM-Logo_logotype.png"
-          url: "https://rosenfeldmedia.com/"
-        - name: "Stand Out Stickers"
-          image: "images/Sponsors/stand_out_stickers/StandOut_Stickers_Logo_RGB-1.png"
-          url: "http://hackp.ac/mlh-StandOutStickers-hackathons"
-
+    - name: "HEB"
+      image: "images/Sponsors/HEB/image 5.svg"
+      url: "https://heb.com"
+    - name: "CrowdStrike"
+      image: "images/Sponsors/Crowdstrike/CrowdStrike_Logos/CS_Logos_2020_FullWhite_FullWhite.png"
+      url: "http://www.crowdstrike.com/"
+    - name: "GitHub"
+      image: "images/Sponsors/GitHub/GitHub_Logo_White 1.svg"
+      url: "https://github.com"
+    - name: "MLH"
+      image: "images/Sponsors/MLH/image 6.svg"
+      url: "https://mlh.com"
+    - name: "Rosenfeld Media"
+      image: "images/Sponsors/Rosenfeld_Media/Asset 1 1.svg"
+      url: "https://rosenfeldmedia.com/"
+    - name: "Stand Out Stickers"
+      image: "images/Sponsors/stand_out_stickers/StandOut_Stickers.svg"
+      url: "http://hackp.ac/mlh-StandOutStickers-hackathons"
       #followup with taskade to see if they actually want sponsorship
 
   # This is the message you'll receive once you've registered.

@@ -19,7 +19,7 @@
  */
 
 * {
-  font-family: "DM Sans";
+  font-family: "HK Grostek";
   font-weight: 600;
 }
 body {
@@ -252,7 +252,7 @@ body {
 
 .about p {
   color: #eeeeee;
-  font-family: "DM Sans";
+  
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
@@ -265,7 +265,7 @@ body {
 }
 
 .about h1 {
-  font-family: "DM Sans";
+  
   font-style: normal;
   font-weight: 700;
   font-size: 55px;
@@ -299,7 +299,6 @@ body {
 }
 
 .info .item h1 {
-  /* font-family: 'HK Grotesk'; */
   font-style: normal;
   font-weight: 300;
   font-size: 30px;
@@ -312,7 +311,6 @@ body {
 }
 
 .info .item p {
-  /* font-family: 'HK Grotesk'; */
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -335,7 +333,6 @@ body {
 }
 
 .faq .question .question-gradient {
-  font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
   font-size: 25px;

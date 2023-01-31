@@ -9,7 +9,6 @@
 }
 
 .schedule .small-subtitile {
-    font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -24,7 +23,6 @@
 /* Gradients */
 
 .gradient-h2-one {
-    font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -37,7 +35,6 @@
 }
 
 .gradient-h2-two {
-    font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
@@ -47,6 +44,36 @@
     background: linear-gradient(89.83deg, #1FA2FF 0.14%, #12D8FA 56.37%, #A6FFCB 113.78%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.gradient-h2-three {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 122%;
+    /* or 43px */
+
+
+    background: linear-gradient(90deg, #F6C74F 7.95%, #4FF692 69.82%, #12C2E9 110.36%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.gradient-h2-four {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 122%;
+    /* or 43px */
+
+
+    background: linear-gradient(90deg, #12C2E9 7.95%, #C471ED 59.16%, #F64F59 110.36%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
 }
 
 .gradient-hero-cta {

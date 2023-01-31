@@ -1,27 +1,70 @@
 <!-- section wrapper -->
-<section class="sponsors pt-5">
+<section class="sponsors pt-5 pb-5 mb-5" >
+  <!-- floating gradient -->
+
+  <div class="background-layer">
+    <img id="footer-mask-gradient" class="" src="/images/masks/GradientFooter.svg" alt="Frontera Devs Cyber Punk Core mask"></img>
+  </div>
+
   <!-- formatting container -->
-  <div class="container ps-5">
+  <div class="container text-center wrap-layer " style="padding: 325px 0;
+  ">
     <!-- align sponsor tiers -->
-    <div class="row align-items-center">
-      {% for tiers in site.event.sponsors %}
-      <div class="col-12 mb-5">
-        <h2 class="section-title mb-3">{{tiers.tier_name}}</h2>
-        <!-- the row for the sponsors -->
-        <div class="row">
-          {% for sponsor in tiers.sponsors%}
-          <div class="bg-image hover-overlay hover-zoom ripple" style="max-width: fit-content">
-            <img class="sponsor" src="{{sponsor.image}}" alt="{{ sponsor.name }}" />
-            <!-- just a style div -->
-            <a href="{{sponsor.url}}" target="_blank" class="mask" >
-            </a>
-          </div>
-          {% endfor %}
+    <div id="sponsor-text" class="mb-5 pb-4" style="position:relative;">
+      <h3
+        style="
+          font-style: normal;
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 122%;
+          /* or 24px */
+          letter-spacing: 0.15em;
+          color: #a2a2a2;
+          
+        "
+        class="pb-2"
+      >
+        SPONSORS
+      </h3>
+      <span
+        class="pt-5"
+        style="
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          line-height: 122%;
+        "
+        >Frontera Hacks is made possible by our wonderful sponsors.</span
+      >
+    </div>
+    <div class="row align-items-center justify-content-center">
+      {% for sponsor in site.event.sponsors %}
+      <div
+        class="col-xl-4 col-auto col-md-6 mb-5 hover-overlay hover-zoom ripple"
+      >
+        <!-- sponsor -->
+        <div class="" style="">
+          <img
+            class="sponsor"
+            src="{{sponsor.image}}"
+            alt="{{ sponsor.name }}"
+            style="max-width: 300px; height: auto"
+          />
+          <!-- just a style div -->
+          <a href="{{sponsor.url}}" target="_blank" class="mask"> </a>
         </div>
       </div>
       {% endfor %}
     </div>
+    <div class="container text-center sponsor-cta d-flex flex-column" style="width: fit-content;position: relative;">
+      <span>Want to help make this event a reality?</span>
+      <a
+        href="mailto:fronteradevs@gmail.com?subject=We Are Interested In Becoming A Sponsor For Frontera Hacks"
+        class="btn rounded-pill px-0 hover-overlay hover-zoom ripple"
+        id="sponsorship-button"
+        style=""
+        >BECOME A SPONSOR</a
+      >
+    </div>
   </div>
-  <img src="images/transition.svg" style="background-color: #f9f9f9; width: 100vw;     margin-top: -6%;" alt=""
-    class="svg" />
 </section>

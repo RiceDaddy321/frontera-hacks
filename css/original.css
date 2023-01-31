@@ -12,6 +12,9 @@
 @import url(https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap);
 
 @import url(https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap);
+
+/* Hanken Grostek */
+@import url(https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
 /*
  * Primary Blue: #44D5FF;
  * Dark Blue: #0F2C34;
@@ -19,13 +22,15 @@
  */
 
 * {
-  font-family: "DM Sans";
+  font-family: "Hanken Grotesk";
   font-weight: 600;
 }
 body {
-    background-color: transparent !important;  
+  background-color: transparent !important;
 }
-section,html, body {
+section,
+html,
+body {
   overflow-x: hidden;
   max-width: 100vw;
   background-color: none;
@@ -39,20 +44,18 @@ section,html, body {
     #090d1e 49.79%,
     rgb(9, 13, 30) 101.7%
   );
-  /* background: url(../images/background.svg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: left top; */
   color: #f7f8fa;
+  position: relative;
 }
 
 .bottom-section {
-  background-color: #F9F9F9;
-  color: #000000;
+  padding-top: 150px;
+  padding-bottom: 110px;
+  color: #000;
+  background-color: #090d1e;
+  background-image: url("/images/transition.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -65,6 +68,16 @@ section,html, body {
   max-width: 100px;
   min-width: 60px;
   width: 10%;
+}
+
+#register-button {
+  background-color: #ffffff;
+  color: #d793e4;
+  transition: all 1s ease-out;
+}
+#register-button:hover {
+  color: #ffffff;
+  background-color: #d793e4;
 }
 
 .badges {
@@ -84,36 +97,75 @@ section,html, body {
 }
 
 /* sponsor section */
+
+/* .wrap-layer {
+  position: relative;
+}
+.text-layer {
+  position: absolute;
+  width: 100%;
+  height: auto;
+} */
+
+#sponsorship-button {
+  background-color: #ffffff;
+  color: #00071e;
+  transition: all 1s ease-out;
+
+}
+
+#sponsorship-button:hover {
+  background-color: #288d2a;
+  color: #ffffff;
+  box-shadow: #0f2c34;
+}
+
 .sponsor {
   width: 300px;
 }
 
 .zoom {
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
-/* 
+/*
  * Hero Section
  */
+.call-to-action {
+  position: relative;
+}
+.call-to-action h4 {
+  display: inline;
+}
+
+#floating {
+  position: absolute;
+  z-index: 0;
+  width: 100vw;
+  height: auto;
+  top: 0;
+
+  /* background: url("/images/masks/Gradientheader.svg") no-repeat; */
+}
 
 .hero {
   /* background-color: #F5699C; */
-  min-height: min-conent;
+  /* min-height: 100vh; */
+  margin: auto;
+  padding-top: 110px;
 }
 
-#buildings {
-  width: auto;
-  height: 100vh;
-  top: 0;
-  left: 0;
+#sparkle-stars {
+  max-width: 45%;
+  height: auto;
 }
 
 .fh-logo {
-  width: 54.8387%;
+  width: 34.8387%;
   height: auto;
-  left: 37.59%;
-  top: 71.05%;
-  z-index: 1;
-  position: absolute;
+  /* left: 37.59%; */
+  /* top: 71.05%; */
+  /* z-index: 1; */
+  /* position: relative; */
 }
 
 .fh-logo img {
@@ -121,7 +173,9 @@ section,html, body {
 }
 
 .fh-logo span {
-  width: 50%;
+  font-weight: lighter;
+  line-height: 122%;
+  font-size: 30px;
 }
 
 .hero hr {
@@ -166,7 +220,7 @@ section,html, body {
   border-radius: 40px;
   color: #abbcc1;
   display: inline;
-  
+
   font-size: 24px;
   font-weight: 700;
   padding: 10px 70px;
@@ -184,29 +238,28 @@ section,html, body {
 .hero .buttons a:not(:last-child) {
   margin-right: 10px;
 }
-/* 
+/*
  * About Section
  */
 
 .about {
   border-width: 15px 0;
-    color: #f9f9f9;
-    padding: 130px 0;
-    position: relative;
-    
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
+  color: #f9f9f9;
+  padding: 130px 0;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
 }
 
 .about p {
   color: #eeeeee;
-  font-family: 'DM Sans';
+  
   font-style: normal;
   font-weight: 400;
   font-size: 25px;
   line-height: 122%;
-  
 }
 
 .about p span {
@@ -215,23 +268,22 @@ section,html, body {
 }
 
 .about h1 {
-  font-family: 'DM Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 55px;
-line-height: 122%;
-/* or 67px */
+  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 122%;
+  /* or 67px */
 
-
-background: linear-gradient(90deg, #DAFFF2 0%, #B1DAFF 121.39%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+  background: linear-gradient(90deg, #dafff2 0%, #b1daff 121.39%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .about .description {
-  width: 70%;
+  display: inline-block;
 }
 
 /*
@@ -250,9 +302,10 @@ text-fill-color: transparent;
 }
 
 .info .item h1 {
-  
-  font-size: 45px;
-  font-weight: 700;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 122%;
   margin: 20px 0;
 }
 
@@ -261,7 +314,10 @@ text-fill-color: transparent;
 }
 
 .info .item p {
-  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 122%;
 }
 
 /*
@@ -269,33 +325,28 @@ text-fill-color: transparent;
  */
 
 .faq {
-  padding: 100px 0;
   position: relative;
   background-color: #f9f9f9;
   color: #000000;
 }
 
 .faq h1 {
-  
   font-weight: 700;
   margin: 30px 0;
 }
 
 .faq .question .question-gradient {
-  
-  font-family: 'DM Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 25px;
-line-height: 100%;
-/* identical to box height, or 25px */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 100%;
+  /* identical to box height, or 25px */
 
-
-background: linear-gradient(90deg, #3FA1CB 18.08%, #9D57E3 95.76%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+  background: linear-gradient(90deg, #3fa1cb 18.08%, #9d57e3 95.76%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 .faq .question hr {
@@ -319,6 +370,15 @@ text-fill-color: transparent;
  * Footer Section
  */
 
+#footer-mask-gradient {
+  position: absolute;
+  z-index: 0;
+  width: 100vw;
+  height: 35%;
+  bottom: 0px;
+  overflow: hidden;
+}
+
 .footer {
   color: #f9f9f9;
   padding: 30px 0;
@@ -330,7 +390,6 @@ text-fill-color: transparent;
 }
 
 .footer h3 {
-  
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
@@ -341,6 +400,7 @@ text-fill-color: transparent;
   color: #f9f9f9;
 }
 
+/* media queries */
 @media (max-width: 768px) {
   .hero .buttons a {
     border-width: 8px;
@@ -365,5 +425,17 @@ text-fill-color: transparent;
 
   .about .container {
     text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .fh-logo #logo {
+    width: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  .fh-logo #logo {
+    width: 80%;
   }
 }

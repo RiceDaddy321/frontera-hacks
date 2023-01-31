@@ -12,7 +12,7 @@
       <!-- columns-->
       {% for day in site.event.days %}
       <div class="col-11 col-md-5 offset-1">
-        <h4 class="{{day.gradient}}">{{day.day}}</h4>
+        <h4 class="{{day.gradient}} pb-5">{{day.day}}</h4>
         <!-- This is the start of the listing of the slots -->
         <div class="question row">
           {% for item in day.slots %}

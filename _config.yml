@@ -111,13 +111,13 @@ event:
         - time: "01:00PM"
           name: "Lunch"
         - time: "02:00PM"
-          name: "Intro to Web Development"
+          name: "Plotty Dash Workshop ft. Kristen Hallas"
         - time: "04:00PM"
-          name: "Snyk Cybersecurity Challenge"
+          name: "Snyk Cybersecurity Challenge ft. Ellie"
         - time: "06:00PM"
           name: "Slideshow Karaoke"
-        - time: "11:00PM"
-          name: "Smash Bros. Tournament"
+        - time: "7:00PM"
+          name: "Dinner"
 
     # Day 2 schedule
     - day: "February 12th, Sunday"

@@ -183,6 +183,9 @@ event:
     - name: "Stand Out Stickers"
       image: "images/Sponsors/stand_out_stickers/StandOut_Stickers.svg"
       url: "http://hackp.ac/mlh-StandOutStickers-hackathons"
+    - name: "Myth Adventures"
+      image: "images/Sponsors/Myth_Adeventures/myth.jpg"
+      url: "https://www.facebook.com/mythadventures/"
       #followup with taskade to see if they actually want sponsorship
 
   # This is the message you'll receive once you've registered.

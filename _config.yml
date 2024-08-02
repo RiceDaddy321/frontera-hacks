@@ -43,20 +43,20 @@ social:
     url: "https://instagram.com/fronterahacks?igshid=MDM4ZDc5MmU="
 # This is Search Engine Optimization. It'll help your website look better on search.
 seo:
-  title: "Frontera Hacks | 11-12 February 2023"
-  description: "Frontera Hacks is the an inaugural 24-hour hackathon hosted by Frontera Devs."
+  title: "Frontera Hacks | October 19-20, 2024"
+  description: "Frontera Hacks is a inaugural 24-hour hackathon hosted by Frontera Devs."
   image: "_site/images/favicon.ico"
 
 # Event information.
 event:
   name: "Frontera Hacks"
-  description: "Frontera Hacks is the an inaugural 24-hour hackathon hosted by Frontera Devs."
+  description: "Frontera Hacks is a 24-hour hackathon hosted by Frontera Devs."
   tagline: "Accelerating innovation in the RGV"
-  date: "11-12 February 2023"
-  location: "Weslaco, TX, United States"
+  date: "October 19-20, 2024"
+  location: "Edinburg, TX, United States"
 
   trust_badge:
-    year: "2023" # season year
+    year: "2024" # season year
     region: "na" # "na" or "eu"
     color: "white" # "white", "black", "gray", "red", "blue" or "yellow"
 
@@ -76,7 +76,7 @@ event:
 
   about:
     description: >
-      Frontera Hacks is an inaugural 24-hour hackathon hosted by Frontera Devs that aims to foster a community of developers driven to innovate. At Frontera Hacks, we aim to provide an experience for developers of all skill levels to adopt skills taught outside of the classroom, collaborate with like-minded teams, and design projects with the potential to accelerate innovation in the Rio Grande Valley.
+      Frontera Hacks is the second 24-hour hackathon hosted by Frontera Devs that aims to foster a community of developers driven to innovate. At Frontera Hacks, we aim to provide an experience for developers of all skill levels to adopt skills taught outside of the classroom, collaborate with like-minded teams, and design projects with the potential to accelerate innovation in the Rio Grande Valley.
 
   # Info Sections
   info:
@@ -95,7 +95,7 @@ event:
           Develop solutions with the potential to aid and impact our community
   days:
     # Day 1 schedule
-    - day: "February 11th, Saturday"
+    - day: "October 19th, Saturday"
       gradient: gradient-h2-three
       slots:
         - time: "09:00AM"
@@ -111,34 +111,32 @@ event:
         - time: "01:00PM"
           name: "Lunch"
         - time: "02:00PM"
-          name: "Plotty Dash Workshop ft. Kristen Hallas"
+          name: "Workshop (TBA)"
         - time: "04:00PM"
-          name: "Snyk Cybersecurity Challenge ft. Ellie"
+          name: "Workshop (TBA)"
         - time: "06:00PM"
-          name: "Slideshow Karaoke"
+          name: "Group De-stress Activity"
         - time: "07:00PM"
           name: "Dinner"
 
     # Day 2 schedule
-    - day: "February 12th, Sunday"
+    - day: "October 20th, Sunday"
       gradient: gradient-h2-four
       slots:
         - time: "12:00AM"
-          name: "Lo-fi and Chill"
+          name: "Late night De-stress Activity"
         - time: "07:00AM"
           name: "Breakfast"
-        - time: "08:00AM"
-          name: "Headspace"
         - time: "12:00PM"
           name: "Submit Projects"
         - time: "01:00PM"
           name: "Lunch"
         - time: "01:30PM"
-          name: "Women in Tech"
+          name: "Workshop"
         - time: "02:00PM"
           name: "Judging"
         - time: "04:00PM"
-          name: "Rewards Ceremony"
+          name: "Awards Ceremony"
 
   # Frequently asked questions.
   faq:
@@ -165,27 +163,10 @@ event:
 
   # sponsors list
   sponsors:
-    - name: "HEB"
-      image: "images/Sponsors/HEB/image 5.svg"
-      url: "https://heb.com"
-    - name: "CrowdStrike"
-      image: "images/Sponsors/Crowdstrike/CrowdStrike_Logos/CS_Logos_2020_FullWhite_FullWhite.png"
-      url: "http://www.crowdstrike.com/"
-    - name: "GitHub"
-      image: "images/Sponsors/GitHub/GitHub_Logo_White 1.svg"
-      url: "https://github.com"
-    - name: "MLH"
-      image: "images/Sponsors/MLH/image 6.svg"
-      url: "https://mlh.com"
-    - name: "Rosenfeld Media"
-      image: "images/Sponsors/Rosenfeld_Media/Asset 1 1.svg"
-      url: "https://rosenfeldmedia.com/"
-    - name: "Stand Out Stickers"
-      image: "images/Sponsors/stand_out_stickers/StandOut_Stickers.svg"
-      url: "http://hackp.ac/mlh-StandOutStickers-hackathons"
-    - name: "Myth Adventures"
-      image: "images/Sponsors/Myth_Adeventures/myth.jpg"
-      url: "https://www.facebook.com/mythadventures/"
+    #- name: "HEB"
+    #  image: "images/Sponsors/HEB/image 5.svg"
+    #  url: "https://heb.com"
+
       #followup with taskade to see if they actually want sponsorship
 
   # This is the message you'll receive once you've registered.

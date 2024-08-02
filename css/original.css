@@ -326,7 +326,7 @@ body {
 
 .faq {
   position: relative;
-  background-color: #f9f9f9;
+  background-color: #FFFFFF;
   color: #000000;
 }
 
@@ -426,6 +426,10 @@ body {
   .about .container {
     text-align: center;
   }
+}
+
+.fh-logo #logo {
+  width: 100%;
 }
 
 @media (max-width: 992px) {
